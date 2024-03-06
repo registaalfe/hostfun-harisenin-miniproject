@@ -1,0 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+.nav-group {
+  background-color: #311a50;
+}/*# sourceMappingURL=style.css.map */
