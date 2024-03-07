@@ -7,35 +7,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Navbar</title>
     @vite('resources/css/style.css')
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Vollkorn:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet" />
 </head>
 
 <body>
     <nav class="nav-group">
         <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-            <div class="relative flex h-16 items-center justify-between">
-                <div class="absolute flex inset-y-0 left-0 items-center sm:hidden">
+            <div class="relative flex h-20 items-center justify-between">
+                <div class="absolute flex inset-y-0 justify-end items-center sm:hidden">
                     <!-- Start mobile menu button -->
-                    <button type="button"
-                        class="relative inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
-                        aria-controls="mobile-menu" aria-expanded="false">
-                        <span class="absolute -inset-0.5"></span>
-                        <span class="sr-only">Open main menu</span>
+                    <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
+                    <label for="hamburger"
+                        class="peer-checked:hamburger block relative z-20 p-6 mr-6 cursor-pointer lg:hidden">
+                        <div class="m-auto h-0.5 w-6 rounded bg-white transition duration-300" aria-hidden:true></div>
+                        <div class="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300" aria-hidden:true>
+                        </div>
+                    </label>
 
-                        <!-- Start icon when menu is closed. Menu open: "hidden", Menu closed: "block" -->
-                        <svg class="block h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round"
-                                d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-                        </svg>
-                        <!-- End icon when menu is closed. Menu open: "hidden", Menu closed: "block" -->
+                    <!-- Mobile menu, show/hide based on menu state. -->
+                    <div
+                        class="peer-checked:translate-x-0 fixed top-14 inset-0 translate-x-[-100%] bg-[#311a50] shadow-xl lg:w-auto lg:shadow-none lg:static">
+                        <div class="flex flex-col h-full justify-between lg:flex-row">
+                            <ul class="px-6 pt-16 space-y-4 md:px-12 lg:space-y-0">
+                                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+                                <li>
+                                    <a href="#"
+                                        class="group relative block font-medium text-gray-300 py-2 px-4 rounded-full hover:text-white hover:bg-[#492777]">Home</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="group relative block font-medium text-gray-300 py-2 px-4 rounded-full hover:text-white hover:bg-[#492777]">Hosting</a>
+                                </li>
+                                <li>
+                                    <a href="#"
+                                        class="group relative block font-medium text-gray-300 py-2 px-4 rounded-full hover:text-white hover:bg-[#492777]">Domain</a>
+                                </li>
+                            </ul>
 
-                        <!-- Start icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
-                        <svg class="hidden h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                            stroke="currentColor" aria-hidden="true">
-                            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
-                        </svg>
-                        <!-- End icon when menu is open. Menu open: "block", Menu closed: "hidden" -->
-                    </button>
+                            <div class="border-t py-8 px-6 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0">
+                                <button type="button"
+                                    class="signup-button block rounded-full bg-gradient-to-r bg-[#E9E604] py-3 px-48 hover:text-white font-bold">Sign
+                                    Up
+                                </button>
+                            </div>
+                        </div>
+                    </div>
                     <!-- End mobile menu button -->
                 </div>
 
@@ -45,50 +67,33 @@
                     </div>
                 </div>
 
-                <div class="hidden items-center justify-center sm:ml-6 sm:block">
+                <div class="nav-item hidden items-center justify-center sm:ml-6 sm:block">
                     <ul class="flex space-x-4">
                         <li>
                             <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
+                                class="text-gray-300 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Home</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Hosting</a>
+                                class="text-gray-300 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Hosting</a>
                         </li>
                         <li>
                             <a href="#"
-                                class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Domain</a>
+                                class="text-gray-300 hover:text-white rounded-md px-3 py-2 text-sm font-medium">Domain</a>
                         </li>
                     </ul>
                 </div>
 
                 <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                     <button type="button"
-                        class="relative rounded-full bg-amber-500 py-2 px-6 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 max-sm:hidden">Sign
+                        class="signup-button relative rounded-full bg-[#E9E604] py-1.5 px-6 hover:text-white focus:outline-none focus:ring-2 focus:ring-offset-2 max-sm:hidden">Sign
                         Up
                     </button>
                 </div>
             </div>
         </div>
 
-        <!-- Mobile menu, show/hide based on menu state. -->
-        <div class="sm:hidden" id="mobile-menu">
-            <ul class="space-y-1 px-2 pb-3 pt-2">
-                <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                <li>
-                    <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Home</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Hosting</a>
-                </li>
-                <li>
-                    <a href="#"
-                        class="text-gray-300 hover:bg-gray-700 hover:text-white block rounded-md px-3 py-2 text-base font-medium">Domain</a>
-                </li>
-            </ul>
-        </div>
+
     </nav>
 </body>
 

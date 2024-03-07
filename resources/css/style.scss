@@ -2,6 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+// font-family: "Karla", sans-serif;
+// font-family: "Vollkorn", serif;
+
+@layer components {
+    .hamburger div:first-child {
+        @apply rotate-45 translate-y-1.5;
+    }
+
+    .hamburger div:last-child {
+        @apply -rotate-45 -translate-y-1;
+    }
+}
+
 .nav-group {
     background-color: #311a50;
+    
+}
+
+.nav-item ul li a {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
+}
+
+.signup-button {
+    font-family: "Karla", sans-serif;
+    font-size: 16px;
 }
