@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Navbar</title>
+    <title>Hostfun</title>
     @vite('resources/css/style.css')
 
     <!-- Google Font -->
@@ -18,11 +18,11 @@
 
 <body>
     <!-- Start navbar -->
-    <div class="container flex-wrap inline">
-        <nav class="nav-group">
-            <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
-                <div class="relative flex h-20 items-center justify-between">
-                    <div class="absolute flex inset-y-0 justify-end items-center sm:hidden">
+    <div class="flex flex-wrap">
+        <nav class="container nav-group mx-auto min-w-full">
+            <div class="max-w-7xl px-2 py-4 sm:px-6 lg:px-8">
+                <div class="relative flex justify-between items-center ">
+                    <div class="absolute flex inset-y-0 justify-end items-center md:hidden">
                         <!-- Start mobile menu button -->
                         <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
                         <label for="hamburger"
@@ -36,7 +36,7 @@
 
                         <!-- Mobile menu, show/hide based on menu state. -->
                         <div
-                            class="peer-checked:translate-x-0 fixed top-14 inset-0 translate-x-[-100%] bg-[#311a50] shadow-xl lg:w-auto lg:shadow-none lg:static">
+                            class="peer-checked:translate-x-[54px] fixed top-14 z-[9999999] overflow-hidden inset-0 translate-x-[-100%] bg-[#311a50] shadow-xl lg:w-auto lg:shadow-none lg:static sm:w-[640px]">
                             <div class="flex flex-col h-full justify-between lg:flex-row">
                                 <ul class="px-6 pt-16 space-y-4 md:px-12 lg:space-y-0">
                                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
@@ -56,8 +56,9 @@
 
                                 <div class="border-t py-8 px-6 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0">
                                     <button type="button"
-                                        class="signup-button block rounded-md bg-gradient-to-r bg-[#E9E604] py-3 px-48 font-bold">Sign
-                                        In
+                                        class="signup-button block rounded-md bg-gradient-to-r bg-[#E9E604] py-3 px-48 font-semibold"><span
+                                            class="bg-[#E9E604]">Sign
+                                            In</span>
                                     </button>
                                 </div>
                             </div>
@@ -65,13 +66,13 @@
                         <!-- End mobile menu button -->
                     </div>
 
-                    <div class="flex items-center justify-center max-sm:flex-1">
+                    <div class="flex items-center justify-center max-md:flex-1">
                         <div class="flex flex-shrink-0 items-center">
                             <img class="h-12 w-auto" src="img/icon1.png" alt="hostfun">
                         </div>
                     </div>
 
-                    <div class="nav-item hidden items-center justify-center sm:ml-6 sm:block">
+                    <div class="nav-item hidden items-center justify-center md:ml-6 md:block">
                         <ul class="flex space-x-4">
                             <li>
                                 <a href="#"
@@ -91,7 +92,7 @@
                     <div
                         class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <button type="button"
-                            class="signup-button text-base relative rounded-md bg-[#E9E604] py-1 px-6 focus:outline-none max-sm:hidden"><span
+                            class="signup-button text-base relative rounded-md bg-[#E9E604] py-1 px-6 focus:outline-none max-md:hidden"><span
                                 class="font-semibold">Sign
                                 In</span>
                         </button>
