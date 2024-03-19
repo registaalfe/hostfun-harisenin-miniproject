@@ -14,6 +14,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Karla:wght@200;300;400;500;600;700;800&family=Vollkorn:wght@400;500;600;700;800&display=swap"
         rel="stylesheet" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
@@ -36,7 +39,7 @@
 
                         <!-- Mobile menu, show/hide based on menu state. -->
                         <div
-                            class="peer-checked:translate-x-[54px] fixed top-14 z-[9999999] overflow-hidden inset-0 translate-x-[-100%] bg-[#311a50] shadow-xl lg:w-auto lg:shadow-none lg:static sm:w-[640px]">
+                            class="peer-checked:translate-x-0 fixed top-14 z-[9999999] overflow-hidden inset-0 translate-x-[-100%] bg-[#311a50] shadow-xl lg:w-auto lg:shadow-none lg:static sm:w-[640px]">
                             <div class="flex flex-col h-full justify-between lg:flex-row">
                                 <ul class="px-6 pt-16 space-y-4 md:px-12 lg:space-y-0">
                                     <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
@@ -92,7 +95,7 @@
                     <div
                         class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <button type="button"
-                            class="signup-button text-base relative rounded-md bg-[#E9E604] py-1 px-6 focus:outline-none max-md:hidden"><span
+                            class="signup-button text-base relative rounded-sm hover:shadow-[4px_4px_0_#f4005c] duration-500 bg-[#E9E604] py-1 px-6 focus:outline-none max-md:hidden"><span
                                 class="font-semibold">Sign
                                 In</span>
                         </button>

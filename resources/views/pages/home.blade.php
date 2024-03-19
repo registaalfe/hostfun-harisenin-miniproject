@@ -1,8 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="container flex mx-auto bg-[#311a50] min-w-full">
-    <div class=" relative flex-col mb-16">
+<section class="container flex mx-auto bg-[#311a50] min-w-full bg-cover bg-no-repeat bg-center"
+    style="background-image: url('/img/background-homepage.png')">
+    <div class="relative flex-col mb-16">
 
         <h1
             class="heading text-center font-extrabold leading-[1.1] text-white pt-14 pb-8 sm:mx-20 md:mx-20 lg:mx-36 xl:mx-72 sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl">
@@ -15,18 +16,13 @@
             demands effortlessly.
         </p>
 
-        <div class="btn-login text-center">
+        <div class="btn-login text-center mt-8">
             <a href="#"
-                class="signup-button text-base text-center font-semibold rounded-md mb-16 bg-[#E9E604] py-2 px-6 focus:outline-none max-sm:hidden">Get
+                class="signup-button text-base text-center font-semibold rounded-sm mb-16 bg-[#E9E604] py-4 px-12 focus:outline-none max-sm:hidden hover:shadow-[6px_6px_0_#f4005c] duration-500">Get
                 Started</a>
         </div>
     </div>
 
-    <div class="flex">
-        <div class="container">
-
-        </div>
-    </div>
 </section>
 
 @endsection
