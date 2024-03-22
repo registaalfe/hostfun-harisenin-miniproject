@@ -16,12 +16,43 @@
             demands effortlessly.
         </p>
 
-        <div class="btn-login text-center mt-8">
+        <div class="btn-login text-center mt-8 mb-8">
             <a href="#"
                 class="signup-button text-base text-center font-semibold rounded-sm mb-16 bg-[#E9E604] py-4 px-12 focus:outline-none max-sm:hidden hover:shadow-[6px_6px_0_#f4005c] duration-500">Get
                 Started</a>
         </div>
+
+        <div id="slide" class="flex-col w-max mt-12">
+            <div class="item bg-orange-400 w-[362px] h-[442px]">
+                <div class="content">
+                    <h1>DOMAIN MURAH</h1>
+                    <p>Banyak domain murah mulai dari 15k.</p>
+                </div>
+            </div>
+
+            <div class="item bg-purple-400">
+                <div class="content">
+                    <h1>DOMAIN MURAH</h1>
+                    <p>Banyak domain murah mulai dari 15k.</p>
+                </div>
+            </div>
+
+            <div class="item bg-green-400">
+                <div class="content">
+                    <h1>DOMAIN MURAH</h1>
+                    <p>Banyak domain murah mulai dari 15k.</p>
+                </div>
+            </div>
+
+            <div class="item bg-red-400">
+                <div class="content">
+                    <h1>DOMAIN MURAH</h1>
+                    <p>Banyak domain murah mulai dari 15k.</p>
+                </div>
+            </div>
+        </div>
     </div>
+
 
 </section>
 
