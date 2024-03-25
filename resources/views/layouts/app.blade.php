@@ -17,6 +17,9 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/8bcf7cf26c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -108,6 +111,8 @@
     </div>
     <!-- End navbar -->
 
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
 </body>
 
 </html>
