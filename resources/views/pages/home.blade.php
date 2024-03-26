@@ -23,14 +23,14 @@
         </div>
 
         <div id="slide" class="w-max mt-12 bg-[#311a50]">
-            <div class="item bg-[#342050] w-[362px] h-[442px] inline-block relative">
+            <div class="item border border-[#67498E] w-[362px] h-[442px] inline-block relative">
                 <div class="content px-6 py-4">
-                    <div class="heading-slider flex border-b-[1px] py-2">
-                        <h3 class="text-white font-semibold text-left text-2xl">Domain Solutions
+                    <div class="heading-slider flex border-b-[1px] pt-1 pb-4 self-center">
+                        <h3 class="text-white font-semibold text-left text-2xl w-32">Domain Solutions
                         </h3>
                         <button id="next-up"
-                            class="w-12 h-12 rounded-[50%] bg-slate-200 transition hover:bg-slate-400"><i
-                                class="fa-lg fa-solid fa-angle-right fa-rotate-by"
+                            class="w-12 h-12 rounded-[50%] bg-slate-200 transition hover:bg-slate-400 ml-32 mt-1"><i
+                                class="fa-lg fa-solid fa-arrow-right fa-rotate-by"
                                 style="--fa-rotate-angle: -45deg;"></i></button>
                     </div>
 
