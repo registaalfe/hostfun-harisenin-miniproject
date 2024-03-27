@@ -23,7 +23,7 @@
         </div>
 
         <div id="slide" class="w-max mt-12 bg-[#311a50]">
-            <div class="item border border-[#67498E] w-[362px] h-[442px] inline-block relative">
+            <div class="item border border-[#67498E] w-[342px] h-[372px] inline-block relative">
                 <div class="content px-6 py-4">
                     <div class="heading-slider flex border-b-[1px] pt-1 pb-4 self-center">
                         <h3 class="text-white font-semibold text-left text-2xl w-32">Domain Solutions
@@ -36,21 +36,42 @@
 
                     <p class="text-left text-gray-300 py-4">Find the perfect domain to match your unique vision
                         and goals effortlessly.</p>
-                    <img src="/img/img-slider1.png" alt="">
+                    <img class="rounded-xl" src="/img/img-slider2.png" alt="Domain Solutions">
                 </div>
             </div>
 
-            <div class="item bg-[#67498E] w-[362px] h-[442px] inline-block relative">
-                <div class="content">
-                    <h1>DOMAIN MURAH 2</h1>
-                    <p>Banyak domain murah mulai dari 15k.</p>
+            <div class="item border border-[#67498E] w-[342px] h-[372px] inline-block relative">
+                <div class="content px-3 py-4">
+                    <div class="heading-slider flex border-b-[1px] pt-1 pb-4 self-center mx-4">
+                        <h3 class="text-white font-semibold text-left text-2xl w-32">Hosting Packages
+                        </h3>
+                        <button id="next-up"
+                            class="w-12 h-12 rounded-[50%] bg-slate-200 transition hover:bg-slate-400 ml-28 mt-1"><i
+                                class="fa-lg fa-solid fa-arrow-right fa-rotate-by"
+                                style="--fa-rotate-angle: -45deg;"></i></button>
+                    </div>
+
+                    <p class="text-left text-gray-300 py-4 mx-4">Ready to launch your website? Get hosting from us and
+                        get
+                        online!</p>
+                    <img class="rounded-xl w-[360px]" src="/img/img-slider3.png" alt="Domain Solutions">
                 </div>
             </div>
 
-            <div class="item bg-[#67498E] w-[362px] h-[442px] inline-block relative">
-                <div class="content">
-                    <h1>DOMAIN MURAH 3</h1>
-                    <p>Banyak domain murah mulai dari 15k.</p>
+            <div class="item border border-[#67498E] w-[342px] h-[372px] inline-block relative">
+                <div class="content px-6 py-4">
+                    <div class="heading-slider flex border-b-[1px] pt-1 pb-4 self-center">
+                        <h3 class="text-white font-semibold text-left text-2xl w-32">VPS Purchase
+                        </h3>
+                        <button id="next-up"
+                            class="w-12 h-12 rounded-[50%] bg-slate-200 transition hover:bg-slate-400 ml-32 mt-1"><i
+                                class="fa-lg fa-solid fa-arrow-right fa-rotate-by"
+                                style="--fa-rotate-angle: -45deg;"></i></button>
+                    </div>
+
+                    <p class="text-left text-gray-300 py-4">Upgrade to VPS hosting for better speed, security, and
+                        reliability.</p>
+                    <img class="rounded-xl" src="/img/img-slider1.png" alt="Domain Solutions">
                 </div>
             </div>
 
