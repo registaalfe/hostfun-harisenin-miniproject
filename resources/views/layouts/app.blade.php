@@ -25,7 +25,7 @@
 <body>
     <!-- Start navbar -->
     <div class="flex flex-wrap">
-        <nav class="container nav-group mx-auto min-w-full">
+        <nav class="container nav-group mx-auto min-w-full bg-[#341953]">
             <div class="max-w-7xl px-2 py-4 sm:px-6 lg:px-8">
                 <div class="relative flex justify-between items-center ">
                     <div class="absolute flex inset-y-0 justify-end items-center md:hidden">
@@ -98,8 +98,8 @@
                     <div
                         class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <button type="button"
-                            class="signup-button text-base relative rounded-sm hover:shadow-[4px_4px_0_#f4005c] duration-500 bg-[#E9E604] py-1 px-6 focus:outline-none max-md:hidden"><span
-                                class="font-semibold">Sign
+                            class="signup-button text-base relative rounded-sm hover:shadow-[4px_4px_0_#684A90] duration-500 text-white bg-gradient-to-r from-[#6115A7] to-[#7054CE] py-1 px-6 focus:outline-none max-md:hidden"><span
+                                class="font-normal">Sign
                                 In</span>
                         </button>
                     </div>

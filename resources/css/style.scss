@@ -15,11 +15,6 @@
     }
 }
 
-
-.nav-group {
-    background-color: #311a50;
-}
-
 .nav-item ul li a {
     font-family: "Karla", sans-serif;
 }
@@ -43,15 +38,15 @@
 }
 
 .item:nth-child(1) {
-    left: 10%;
+    left: 0;
 }
 
 .item:nth-child(2) {
-    left: calc(10% + 40px);
+    left: calc(1% + 4px);
 }
 
 .item:nth-child(n+3) {
-    left: calc(10% + 80px);
+    left: calc(2% + 6px);
 }
 
 .item .content h3 {
@@ -62,4 +57,17 @@
     font-family: "Karla", sans-serif;
 }
 
+.icon-group .icon-left {
+    color: white;
+    transform: rotate(224deg);
+}
+
+.icon-group .icon-next {
+    color: white;
+    transform: rotate(314deg);
+}
+
+
 /*# sourceMappingURL=style.css.map */
+
+

@@ -1,10 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="container flex mx-auto bg-[#311a50] min-w-full min-h-full bg-cover bg-no-repeat bg-center"
+<section class="container flex mx-auto bg-[#dsdsdss] min-w-full min-h-full bg-cover bg-no-repeat bg-center"
     style="background-image: url('/img/background-homepage.png')">
-    <div class="relative flex-col mb-16 min-h-full">
-
+    <div class="relative flex flex-col mb-16 min-h-full">
         <h1
             class="heading text-center font-extrabold leading-[1.1] text-white pt-14 pb-8 sm:mx-20 md:mx-20 lg:mx-36 xl:mx-72 sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl">
             Secure and Efficient Hosting for Your Website
@@ -18,72 +17,101 @@
 
         <div class="btn-login text-center mt-8 mb-8">
             <a href="#"
-                class="signup-button text-base text-center font-semibold rounded-sm mb-16 bg-[#E9E604] py-4 px-12 focus:outline-none max-sm:hidden hover:shadow-[6px_6px_0_#f4005c] duration-500">Get
+                class="signup-button text-base text-center font-semibold rounded-sm mb-16 text-white bg-gradient-to-r from-[#6115A7] to-[#7054CE] py-4 px-12 focus:outline-none max-sm:hidden hover:shadow-[6px_6px_0_#684A90] duration-500">Get
                 Started</a>
         </div>
 
-        <div id="slide" class="w-max mt-12 bg-[#311a50]">
-            <div class="item border border-[#67498E] w-[342px] h-[372px] inline-block relative">
-                <div class="content px-6 py-4">
-                    <div class="heading-slider flex border-b-[1px] pt-1 pb-4 self-center">
-                        <h3 class="text-white font-semibold text-left text-2xl w-32">Domain Solutions
-                        </h3>
-                        <button id="next-up"
-                            class="w-12 h-12 rounded-[50%] bg-slate-200 transition hover:bg-slate-400 ml-32 mt-1"><i
-                                class="fa-lg fa-solid fa-arrow-right fa-rotate-by"
-                                style="--fa-rotate-angle: -45deg;"></i></button>
-                    </div>
-
-                    <p class="text-left text-gray-300 py-4">Find the perfect domain to match your unique vision
-                        and goals effortlessly.</p>
-                    <img class="rounded-xl" src="/img/img-slider2.png" alt="Domain Solutions">
+        {{-- <div class="flex mx-auto min-w-full justify-center">
+            <div class="flex flex-row">
+                <div class="">
+                    <h3>160K+</h3>
+                    <p></p>
+                </div>
+                <div class="">
+                    1
+                </div>
+                <div class="">
+                    1
+                </div>
+                <div class="">
+                    1
                 </div>
             </div>
+        </div> --}}
 
-            <div class="item border border-[#67498E] w-[342px] h-[372px] inline-block relative">
-                <div class="content px-3 py-4">
-                    <div class="heading-slider flex border-b-[1px] pt-1 pb-4 self-center mx-4">
-                        <h3 class="text-white font-semibold text-left text-2xl w-32">Hosting Packages
-                        </h3>
-                        <button id="next-up"
-                            class="w-12 h-12 rounded-[50%] bg-slate-200 transition hover:bg-slate-400 ml-28 mt-1"><i
-                                class="fa-lg fa-solid fa-arrow-right fa-rotate-by"
-                                style="--fa-rotate-angle: -45deg;"></i></button>
+        <!-- Start card slider feature -->
+        <div class="container flex mx-auto flex-row min-w-full justify-evenly self-center">
+            <div class="icon-group z-[222222] self-center">
+                <button id="prev"
+                    class="w-12 h-12 rounded-md rotate-45 border border-[#684A90] transition hover:bg-[#6B60DB]"><i
+                        class="icon-left fa-solid fa-angle-up"></i></button>
+            </div>
+            <div id="slide" class="mt-12 sm:flex sm:flex-row">
+                <div
+                    class="item bg-[#121733] border-2 border-[#793E6F] w-[310px] h-[384px] inline-block relative sm:mt-8 sm:odd:left-8">
+                    <div class="content">
+                        <div class="heading-slider flex border-b-[1px] mx-6 my-4 self-center">
+                            <h3 class="text-white font-semibold text-left text-2xl w-32 pb-4">Domain Solutions
+                            </h3>
+                            <button id="next-up"
+                                class="w-12 h-12 rounded-[50%] bg-white transition hover:bg-gray-300 ml-20 mt-1"><i
+                                    class="fa-lg fa-solid fa-arrow-right fa-rotate-by"
+                                    style="--fa-rotate-angle: -45deg;"></i></button>
+                        </div>
+
+                        <p class="text-left text-gray-300 mx-6 my-4">Find the perfect domain to match your unique vision
+                            and goals effortlessly.</p>
+                        <img class="rounded-2xl w-[280px] h-[168px] mx-[15px]" src="/img/img-slider1.png"
+                            alt="Domain Solutions">
                     </div>
+                </div>
 
-                    <p class="text-left text-gray-300 py-4 mx-4">Ready to launch your website? Get hosting from us and
-                        get
-                        online!</p>
-                    <img class="rounded-xl w-[360px]" src="/img/img-slider3.png" alt="Domain Solutions">
+                <div
+                    class="item bg-[#121733] border-2 border-[#793E6F] w-[310px] h-[384px] inline-block relative sm:mt-8 sm:even:left-16">
+                    <div class="content">
+                        <div class="heading-slider flex border-b-[1px] mx-6 my-4 self-center">
+                            <h3 class="text-white font-semibold text-left text-2xl w-32 pb-4">Hosting Packages
+                            </h3>
+                            <button id="next-up"
+                                class="w-12 h-12 rounded-[50%] bg-white transition hover:bg-gray-300 ml-20 mt-1"><i
+                                    class="fa-lg fa-solid fa-arrow-right fa-rotate-by"
+                                    style="--fa-rotate-angle: -45deg;"></i></button>
+                        </div>
+
+                        <p class="text-left text-gray-300 mx-6 my-4">Ready to launch your website? Get hosting from us
+                            and get online with easily!</p>
+                        <img class="rounded-2xl w-[280px] h-[168px] mx-[15px]" src="/img/img-slider2.png"
+                            alt="Domain Solutions">
+                    </div>
+                </div>
+
+                <div
+                    class="item bg-[#121733] border-2 border-[#793E6F] w-[310px] h-[384px] inline-block relative sm:mt-8 sm:odd:left-0">
+                    <div class="content">
+                        <div class="heading-slider flex border-b-[1px] mx-6 my-4 self-center">
+                            <h3 class="text-white font-semibold text-left text-2xl w-32 pb-4">VPS Purchase
+                            </h3>
+                            <button id="next-up"
+                                class="w-12 h-12 rounded-[50%] bg-white transition hover:bg-gray-300 ml-20 mt-1"><i
+                                    class="fa-lg fa-solid fa-arrow-right fa-rotate-by"
+                                    style="--fa-rotate-angle: -45deg;"></i></button>
+                        </div>
+
+                        <p class="text-left text-gray-300 mx-6 my-4">Upgrade to VPS hosting for better speed, security,
+                            and reliability with our product.</p>
+                        <img class="rounded-2xl w-[280px] h-[168px] mx-[15px]" src="/img/img-slider3.png"
+                            alt="Domain Solutions">
+                    </div>
                 </div>
             </div>
-
-            <div class="item border border-[#67498E] w-[342px] h-[372px] inline-block relative">
-                <div class="content px-6 py-4">
-                    <div class="heading-slider flex border-b-[1px] pt-1 pb-4 self-center">
-                        <h3 class="text-white font-semibold text-left text-2xl w-32">VPS Purchase
-                        </h3>
-                        <button id="next-up"
-                            class="w-12 h-12 rounded-[50%] bg-slate-200 transition hover:bg-slate-400 ml-32 mt-1"><i
-                                class="fa-lg fa-solid fa-arrow-right fa-rotate-by"
-                                style="--fa-rotate-angle: -45deg;"></i></button>
-                    </div>
-
-                    <p class="text-left text-gray-300 py-4">Upgrade to VPS hosting for better speed, security, and
-                        reliability.</p>
-                    <img class="rounded-xl" src="/img/img-slider1.png" alt="Domain Solutions">
-                </div>
-            </div>
-
-            <div class="buttons absolute bottom-8 z-[222222] text-center w-full">
-                <button id="prev" class="w-12 h-12 rounded-[50%] bg-slate-200 transition hover:bg-slate-400"><i
-                        class="fa-solid fa-angle-left"></i></button>
-                <button id="next" class="w-12 h-12 rounded-[50%] bg-slate-200 transition hover:bg-slate-400"><i
-                        class="fa-solid fa-angle-right"></i></button>
+            <div class="icon-group z-[222222] self-center">
+                <button style="left: 20%" id="next"
+                    class="w-12 h-12 rounded-md rotate-45 border border-[#684A90] transition hover:bg-[#6B60DB]"><i
+                        class="icon-next fa-solid fa-angle-right"></i></button>
             </div>
         </div>
     </div>
-
+    <!-- End card slider feature -->
 
 </section>
 
