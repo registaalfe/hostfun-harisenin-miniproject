@@ -18,101 +18,75 @@
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/8bcf7cf26c.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!-- Start navbar -->
-    <div class="flex flex-wrap">
-        <nav class="container nav-group mx-auto min-w-full bg-[#341953]">
-            <div class="max-w-7xl px-2 py-4 sm:px-6 lg:px-8">
-                <div class="relative flex justify-between items-center ">
-                    <div class="absolute flex inset-y-0 justify-end items-center md:hidden">
-                        <!-- Start mobile menu button -->
-                        <input type="checkbox" name="hamburger" id="hamburger" class="peer" hidden>
-                        <label for="hamburger"
-                            class="peer-checked:hamburger block relative z-20 p-6 mr-6 cursor-pointer lg:hidden">
-                            <div class="m-auto h-0.5 w-6 rounded bg-white transition duration-300" aria-hidden:true>
-                            </div>
-                            <div class="m-auto mt-2 h-0.5 w-6 rounded bg-white transition duration-300"
-                                aria-hidden:true>
-                            </div>
-                        </label>
+    <header class="topnav flex flex-wrap bg-[#341953] xs:justify-between sm:min-w-full sm:mx-auto sm:justify-around">
+        <div class="flex mx-8 my-2 items-center">
+            <img class="h-12 w-auto" src="img/icon1.png" alt="hostfun">
+        </div>
 
-                        <!-- Mobile menu, show/hide based on menu state. -->
-                        <div
-                            class="peer-checked:translate-x-0 fixed top-14 z-[9999999] overflow-hidden inset-0 translate-x-[-100%] bg-[#311a50] shadow-xl lg:w-auto lg:shadow-none lg:static sm:w-[640px]">
-                            <div class="flex flex-col h-full justify-between lg:flex-row">
-                                <ul class="px-6 pt-16 space-y-4 md:px-12 lg:space-y-0">
-                                    <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
-                                    <li>
-                                        <a href="#"
-                                            class="group relative block font-medium text-gray-300 py-2 px-4 hover:text-white">Home</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="group relative block font-medium text-gray-300 py-2 px-4 hover:text-white">Hosting</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"
-                                            class="group relative block font-medium text-gray-300 py-2 px-4 hover:text-white">Domain</a>
-                                    </li>
-                                </ul>
+        <nav class="flex">
+            <span id="nav-label" class="hidden">Navigation</span>
 
-                                <div class="border-t py-8 px-6 md:px-12 md:py-16 lg:border-t-0 lg:border-l lg:py-0">
-                                    <button type="button"
-                                        class="signup-button block rounded-md bg-gradient-to-r bg-[#E9E604] py-3 px-48 font-semibold"><span
-                                            class="bg-[#E9E604]">Sign
-                                            In</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- End mobile menu button -->
-                    </div>
+            <!-- Start hamburger menu -->
+            <button id="btnOpen" aria-expanded="false" aria-labelledby="nav-label"
+                class="topnav__open mx-8 my-4 px-1 rounded-full h-14 w-14 bg-gradient-to-r from-[#6115A7] to-[#7054CE] items-center text-white sm:hidden">
+                <i class="fa-solid fa-bars fa-xl"></i>
+            </button>
+            <!-- End hamburger menu to open topnav__menu -->
 
-                    <div class="flex items-center justify-center max-md:flex-1">
-                        <div class="flex flex-shrink-0 items-center">
-                            <img class="h-12 w-auto" src="img/icon1.png" alt="hostfun">
-                        </div>
-                    </div>
+            <!-- Start show/hide menu -->
+            <div role="dialog"
+                class="topnav__menu xs:z-[9999999] xs:fixed xs:inset-0 xs:bg-gradient-to-r xs:from-[#6115A7] xs:to-[#7054CE] sm:self-center">
 
-                    <div class="nav-item hidden items-center justify-center md:ml-6 md:block">
-                        <ul class="flex space-x-4">
-                            <li>
-                                <a href="#"
-                                    class="text-gray-300 hover:text-white rounded-md px-3 py-2 text-base font-medium">Home</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-gray-300 hover:text-white rounded-md px-3 py-2 text-base font-medium">Hosting</a>
-                            </li>
-                            <li>
-                                <a href="#"
-                                    class="text-gray-300 hover:text-white rounded-md px-3 py-2 text-base font-medium">Domain</a>
-                            </li>
-                        </ul>
-                    </div>
+                <!-- Start close menu -->
+                <button id="btnClose" aria-label="Close" class="topnav_close p-8 text-white flex sm:hidden">
+                    <i class="fa-solid fa-xmark fa-2xl"></i>
+                </button>
+                <!-- End close menu -->
 
-                    <div
-                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                        <button type="button"
-                            class="signup-button text-base relative rounded-sm hover:shadow-[4px_4px_0_#684A90] duration-500 text-white bg-gradient-to-r from-[#6115A7] to-[#7054CE] py-1 px-6 focus:outline-none max-md:hidden"><span
-                                class="font-normal">Sign
-                                In</span>
-                        </button>
-                    </div>
-                </div>
+                <ul class="topnav__links flex gap-10 xs:gap-4 xs:flex-col">
+                    <li class="topnav__item xs:mx-10">
+                        <a href="#"
+                            class="topnav__link text-gray-300 text-base font-medium hover:text-white xs:text-2xl xs:text-left">Home</a>
+                    </li>
+                    <li class="topnav__item xs:mx-10">
+                        <a href="#"
+                            class="topnav__link text-gray-300 text-base font-medium hover:text-white xs:text-2xl xs:text-left">Hosting</a>
+                    </li>
+                    <li class="topnav__item xs:mx-10">
+                        <a href="#"
+                            class="topnav__link text-gray-300 text-base font-medium hover:text-white xs:text-2xl xs:text-left">Domain</a>
+                    </li>
+                </ul>
             </div>
+            <!-- End show/hide menu -->
+
         </nav>
 
+        <div class="flex items-center mx-8 xs:hidden">
+            <button type="button"
+                class="signup-button text-base rounded-xs hover:shadow-[4px_4px_0_#684A90] duration-500 text-white bg-gradient-to-r from-[#6115A7] to-[#7054CE] py-1 px-6 focus:outline-none max-md:hidden">Sign
+                In
+            </button>
+        </div>
+
         @yield('content')
-    </div>
+    </header>
     <!-- End navbar -->
 
     <!-- Scripts -->
     <script src="js/script.js"></script>
+
+    <!-- Swiper JS-->
+    <script src="https://cdn.josetxu.com/js/pure-pajinate.es5.min.js"></script>
 </body>
 
 </html>

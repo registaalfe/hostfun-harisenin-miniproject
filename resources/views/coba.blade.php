@@ -12,31 +12,21 @@
 
 <body>
 
-    <div class="container">
-        <span class="slider" id="slider1"></span>
-        <span class="slider" id="slider2"></span>
-        <span class="slider" id="slider3"></span>
-
-
-        <div class="imgContainer">
-
-            <div class="slide_div" id="slide_1">
-                <img src="/img/img-slider1.png" alt="" class="img" id="img1">
-                <a href="#slider1" class="button" id="button1"></a>
-            </div>
-            <div class="slide_div" id="slide_2">
-                <img src="/img/img-slider2.png" alt="" class="img" id="img2">
-                <a href="#slider2" class="button" id="button2"></a>
-            </div>
-            <div class="slide_div" id="slide_3">
-                <img src="/img/img-slider3.png" alt="" class="img" id="img3">
-                <a href="#slider3" class="button" id="button3"></a>
-            </div>
-
-
-        </div>
-
-    </div>
+    <nav>
+        <ul class="px-6 pt-16 space-y-4 md:px-12 lg:space-y-0">
+            <!-- Current: "bg-gray-900 text-white", Default: "text-gray-300 hover:bg-gray-700 hover:text-white" -->
+            <li>
+                <a href="#" class="group relative block font-medium text-gray-300 py-1 px-4 hover:text-white">Home</a>
+            </li>
+            <li>
+                <a href="#"
+                    class="group relative block font-medium text-gray-300 py-1 px-4 hover:text-white">Hosting</a>
+            </li>
+            <li>
+                <a href="#" class="group relative block font-medium text-gray-300 py-1 px-4 hover:text-white">Domain</a>
+            </li>
+        </ul>
+    </nav>
 
 </body>
 

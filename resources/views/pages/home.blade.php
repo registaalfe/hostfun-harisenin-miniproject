@@ -46,9 +46,8 @@
                     class="w-12 h-12 rounded-md rotate-45 border border-[#684A90] transition hover:bg-[#6B60DB]"><i
                         class="icon-left fa-solid fa-angle-up"></i></button>
             </div>
-            <div id="slide" class="mt-12 sm:flex sm:flex-row">
-                <div
-                    class="item bg-[#121733] border-2 border-[#793E6F] w-[310px] h-[384px] inline-block relative sm:mt-8 sm:odd:left-8">
+            <div id="slide" class="slide mt-14">
+                <div class="item bg-[#121733] border-2 border-[#793E6F] w-[310px] h-[384px] inline-block relative">
                     <div class="content">
                         <div class="heading-slider flex border-b-[1px] mx-6 my-4 self-center">
                             <h3 class="text-white font-semibold text-left text-2xl w-32 pb-4">Domain Solutions
@@ -66,8 +65,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="item bg-[#121733] border-2 border-[#793E6F] w-[310px] h-[384px] inline-block relative sm:mt-8 sm:even:left-16">
+                <div class="item bg-[#121733] border-2 border-[#793E6F] w-[310px] h-[384px] inline-block relative">
                     <div class="content">
                         <div class="heading-slider flex border-b-[1px] mx-6 my-4 self-center">
                             <h3 class="text-white font-semibold text-left text-2xl w-32 pb-4">Hosting Packages
@@ -85,8 +83,7 @@
                     </div>
                 </div>
 
-                <div
-                    class="item bg-[#121733] border-2 border-[#793E6F] w-[310px] h-[384px] inline-block relative sm:mt-8 sm:odd:left-0">
+                <div class="item bg-[#121733] border-2 border-[#793E6F] w-[310px] h-[384px] inline-block relative">
                     <div class="content">
                         <div class="heading-slider flex border-b-[1px] mx-6 my-4 self-center">
                             <h3 class="text-white font-semibold text-left text-2xl w-32 pb-4">VPS Purchase
