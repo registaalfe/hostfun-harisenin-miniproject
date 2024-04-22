@@ -50,5 +50,11 @@
     transition: translate 0.5s ease-in-out;
   }
 }
+@media (width < 768px) {
+  .topnav__menu {
+    translate: 200vw 0;
+    transition: translate 0.5s ease-in-out;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */

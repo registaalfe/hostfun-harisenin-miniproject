@@ -1,16 +1,31 @@
 const btnOpen = document.querySelector('#btnOpen');
 const btnClose = document.querySelector('#btnClose');
-const media = window.matchMedia('(width < 640px)');
 const topNavMenu = document.querySelector('.topnav__menu');
+const media640 = window.matchMedia('(width < 640px)');
+const media768 = window.matchMedia('(width < 768px)');
 
-function setupTopNav(e) {
+// Function to handle changes for 640px screen width
+function setupTopNav640(e) {
     if (e.matches) {
         // is mobile
-        console.log('is mobile');
+        console.log('Screen width is 640px or more');
         topNavMenu.setAttribute('innert',''); //innert to disables attribute for some reason
     } else {
         // is tablet dekstop
-        console.log('is dekstop');
+        console.log('Screen width is less than 640pxp');
+        topNavMenu.removeAttribute('innert');
+    }
+}
+
+// Function to handle changes for 768px screen width
+function setupTopNav768(e) {
+    if (e.matches) {
+        // is mobile
+        console.log('Screen width is 768px or more');
+        topNavMenu.setAttribute('innert',''); //innert to disables attribute for some reason
+    } else {
+        // is tablet dekstop
+        console.log('Screen width is less than 768px');
         topNavMenu.removeAttribute('innert');
     }
 }
@@ -28,10 +43,11 @@ function closeMobileMenu() {
 }
 
 // Lets run the function
-setupTopNav(media);
-
+setupTopNav640(media640);
+setupTopNav768(media768);
 btnOpen.addEventListener('click', openMobileMenu);
 btnClose.addEventListener('click', closeMobileMenu);
+
 
 document.getElementById('next').onclick = function(){ 
     let lists = document.querySelectorAll('.item');

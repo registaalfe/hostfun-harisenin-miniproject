@@ -17,7 +17,7 @@
 
         <div class="btn-login text-center mt-8 mb-8">
             <a href="#"
-                class="signup-button text-base text-center font-semibold rounded-sm mb-16 text-white bg-gradient-to-r from-[#6115A7] to-[#7054CE] py-4 px-12 focus:outline-none max-sm:hidden hover:shadow-[6px_6px_0_#684A90] duration-500">Get
+                class="signup-button text-base text-center font-semibold rounded-md mb-16 text-white bg-gradient-to-r from-[#6115A7] to-[#7054CE] py-4 px-12 focus:outline-none max-sm:hidden hover:shadow-[6px_6px_0_#684A90] duration-500">Get
                 Started</a>
         </div>
 
