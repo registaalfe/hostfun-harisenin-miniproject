@@ -1,46 +1,27 @@
 @extends('layouts.app')
 
 @section('content')
-<section class="container flex mx-auto bg-[#dsdsdss] min-w-full min-h-full bg-cover bg-no-repeat bg-center"
-    style="background-image: url('/img/background-homepage.png')">
+<section class="container flex mx-auto bg-[#FDF9F2] min-w-full min-h-full">
+
+    <!-- Start hero page -->
     <div class="relative flex flex-col mb-16 min-h-full">
         <h1
-            class="heading text-center font-extrabold leading-[1.1] text-white pt-14 pb-8 sm:mx-20 md:mx-20 lg:mx-36 xl:mx-72 sm:text-5xl md:text-5xl lg:text-6xl xl:text-6xl">
-            Secure and Efficient Hosting for Your Website
+            class="heading text-center font-extrabold leading-[1.1] text-[#12294A] pt-14 pb-8 xs:mx-6 xs:text-4xl sm:mx-12 sm:text-5xl md:mx-20 md:text-5xl lg:mx-36 lg:text-6xl xl:mx-72 xl:text-6xl">
+            Top Hosting Platforms Support Multinational Enterprises
         </h1>
         <p
-            class="richtext text-center font-thin leading-[1.3] text-white pb-8 sm:mx-12 md:mx-20 lg:mx-32 xl:mx-72 sm:text-base md:text-lg">
-            With our hosting solutions, easily scale your website as your
-            business grows, accommodating increases in traffic and resource
-            demands effortlessly.
-        </p>
+            class="richtext text-center font-medium leading-[1.3] text-[#161519] pb-8 xs:mx-12 xs:text-base sm:mx-24 sm:text-base md:text-lg md:mx-36 lg:mx-72 lg:text-lg xl:mx-96 xl:text-lg">
+            Easily scale your website as your business grows and accommodating increases in traffic effortlessly
+        </p>    
 
         <div class="btn-login text-center mt-8 mb-8">
             <a href="#"
-                class="signup-button text-base text-center font-semibold rounded-md mb-16 text-white bg-gradient-to-r from-[#6115A7] to-[#7054CE] py-4 px-12 focus:outline-none max-sm:hidden hover:shadow-[6px_6px_0_#684A90] duration-500">Get
+                class="signup-button text-base text-center font-semibold rounded-full mb-16 text-white bg-[#12294A] py-4 px-12 focus:outline-none max-sm:hidden hover:shadow-[6px_6px_0_#684A90] duration-500">Get
                 Started</a>
         </div>
 
-        {{-- <div class="flex mx-auto min-w-full justify-center">
-            <div class="flex flex-row">
-                <div class="">
-                    <h3>160K+</h3>
-                    <p></p>
-                </div>
-                <div class="">
-                    1
-                </div>
-                <div class="">
-                    1
-                </div>
-                <div class="">
-                    1
-                </div>
-            </div>
-        </div> --}}
-
         <!-- Start card slider feature -->
-        <div class="container flex mx-auto flex-row min-w-full justify-evenly self-center">
+        <!-- <div class="container flex mx-auto flex-row min-w-full justify-evenly self-center">
             <div class="icon-group z-[222222] self-center">
                 <button id="prev"
                     class="w-12 h-12 rounded-md rotate-45 border border-[#684A90] transition hover:bg-[#6B60DB]"><i
@@ -106,9 +87,16 @@
                     class="w-12 h-12 rounded-md rotate-45 border border-[#684A90] transition hover:bg-[#6B60DB]"><i
                         class="icon-next fa-solid fa-angle-right"></i></button>
             </div>
-        </div>
+        </div> -->
+        <!-- End card slider feature -->
     </div>
-    <!-- End card slider feature -->
+    <!-- End hero page -->
+
+    <!-- Start about page -->
+    
+    <!-- End about page -->
+
+    
 
 </section>
 

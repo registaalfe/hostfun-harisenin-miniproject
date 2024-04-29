@@ -1,12 +1,18 @@
 /** @type {import('tailwindcss').Config} */
 export default {
     content: [
+        "./src/**/*.{html,js}",
         "./resources/**/*.blade.php",
         "./resources/**/*.js",
         "./resources/**/*.vue",
     ],
     theme: {
-        extend: {},
+        extend: {
+            backgroundImage:{
+                'img-icon' : "url('/public/images/img-icon.png')",
+                'img-hero': "url('/public/images/img-hero.png')",
+            },
+        },
         screens: {
             'xs': {'min': '321px', 'max': '640px'},
             // => @media (min-width: 640px and max-width: 640px) { ... }

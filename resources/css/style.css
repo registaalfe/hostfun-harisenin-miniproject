@@ -56,5 +56,8 @@
     transition: translate 0.5s ease-in-out;
   }
 }
+.topnav__link {
+  font-family: "Karla", sans-serif;
+}
 
 /*# sourceMappingURL=style.css.map */
